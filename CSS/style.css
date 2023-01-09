@@ -6,9 +6,8 @@ body{
     margin: 0;
 }
 
-h1{
-    font-size: 2rem;
-    line-height: 1.3em;
+.logo {
+    border-radius: 50%;
 }
 
 p{
@@ -19,6 +18,11 @@ p{
     width: 85%; /*porcentaje de ocupacion de la pagina*/
     max-width: 850px; /*ancho maximo de la clase*/
     margin: 0 auto; /*quita margenes arriba y abajo, y los laterales son automaticos para que quede centrado*/
+    
+}
+
+.container nav{
+    text-align: center;
 }
 
 .header-fix{
@@ -39,6 +43,10 @@ p{
 .menu-icon{
     display: none;
 }
+.menu{
+    display: none;
+}
+
 
 .logo-nav-container{
     display: flex;
@@ -75,19 +83,58 @@ p{
 }
 
 .main{
-    padding: 20rem; /*este padding lo hago porque al fijar la cabecera, se me superpone con el contenido, entonces se baja*/
+    padding: 20rem 0; /*este padding lo hago porque al fijar la cabecera, se me superpone con el contenido, entonces se baja*/
 }
 
 .footer{
     background: #333;
-    padding: 4rem 0;
+    padding: 2rem 0;
     text-align: center;
     color: white;
-    margin-top: 10rem;
+    margin-top: 1rem;
+}
+.footer h5{
+    text-align: left;
 }
 
+.footer form fieldset{
+    text-align: center;
+}
+.footer form fieldset legend{
+    text-align: left;
+}
+textarea{
+    border-radius: 5px;
+    width: 50%;
+    height: 10em;
+}
+input{
+    width: 50%;
+    border-radius: 5px;
+ }
 
-@media only screen and (max-width: 770px){ 
+ .formulario{
+    align-items: center;
+    width: auto;
+    margin: 0;
+    padding: 0;
+ }
+ .formulario label{
+    font-size: 13px;
+ }
+ #enviarBtn{
+    font-weight: bold;
+    padding: 10px;
+ }
+
+
+
+
+@media only screen and (max-width: 770px){
+    
+    .logo {
+        align-items: center;
+    }
     
     .menu-icon{
         display: block;
@@ -95,6 +142,8 @@ p{
         border-radius: 20%;
         width: 35px;
         height: 35px;
+
+        background-color: white;
         
     }
 
@@ -130,12 +179,6 @@ p{
     .title-container h1{
         font-size: 30px;
     }
-
-
-    .main{
-        padding: 15rem; 
-    }
-
 
 
 }

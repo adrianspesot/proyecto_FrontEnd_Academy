@@ -17,11 +17,13 @@
         <div class="title-container">
             <h1>Franklin Marshall</h1>
         </div>
-        
+                           
+            <img src="https://cdn-icons-png.flaticon.com/512/561/561123.png" id="menu" alt="Ver Menú" class="menu-icon">
             
-            <button type="button" id="menu">
-                <img src="https://cdn-icons-png.flaticon.com/512/561/561184.png" alt="Ver Menú" class="menu-icon">
-            </button>
+
+        </div>
+
+        <div class="container">
             <nav class="navigation">
                 <ul id="format-ul">
                     <li><a href="">Perfil</a></li>
@@ -55,7 +57,25 @@
 
     <footer class="footer">
         <div class="container">
-            <p>Debemos agregar un formulario de contacto</p>
+            <h5>Puede contactarme dejando un mensaje en el siguiente formulario</h5>
+            <form method="POST">
+                <fieldset>
+                    <legend>Formulario de contacto</legend>
+                    <div class="formulario">
+                        <label for="nombre">Nombre:</label><br>  
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required="True"><br>
+                        <label for="apellido">Apellido:</label><br>
+                        <input type="text" id="apellido" name="apellido" placeholder="Apellido" required="True"><br>
+                        <label for="email">e-mail:</label><br>
+                        <input type="email" id="email" name="email" placeholder="email" required="True"><br>
+                        <label for="mensaje">Mensaje:</label><br>
+                        <textarea type="text" id="mensaje" name="mensaje" placeholder="Deje su mensaje en este espacio" required="True"></textarea> <br>
+                        <input type="submit" id="enviarBtn" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
+
+            <h4>Muchas Gracias por visitar mi perfil</h4>
         </div>
     </footer>
 
