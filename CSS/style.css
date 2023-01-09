@@ -1,0 +1,103 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333;
+    font-size: 1.2rem; /* tamaño de fuente*/
+    line-height: 1.4em;/*interlineado*/
+    margin: 0;
+}
+
+h1{
+    font-size: 2rem;
+    line-height: 1.3em;
+}
+
+p{
+    margin-bottom: 1.6em;
+}
+
+.container{
+    width: 85%; /*porcentaje de ocupacion de la pagina*/
+    max-width: 850px; /*ancho maximo de la clase*/
+    margin: 0 auto; /*quita margenes arriba y abajo, y los laterales son automaticos para que quede centrado*/
+}
+
+.header-fix{
+    background: #333 ;
+    color: white;
+    padding: 2rem 0;
+
+    position: fixed; /*Fijar posición del elemento header, esto lo deja flotante por lo que debemos decirle cual es la posición, a su vez se superpone con el contenido*/
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between; /*Con esto hacemos que los elementos que están como felx se vayan a la izq y der*/
+    /*Logramos que el logo vaya a la izq, el titulo al centro y el nav a la der*/
+    align-items: center; 
+
+    flex-wrap: wrap;/*Esto es para que si un elemento no le permite estar al lado del otro, que lo pase para abajo*/
+
+}
+
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navigation ul li{
+    display: inline-block;
+}
+
+.navigation ul li a{
+    display: block;
+    padding:  0.5rem 1rem;
+    transition: all 0.4s linear; /*damos animación*/
+    border-radius: 5px;
+}
+
+.navigation ul li a:hover{/*cambiamos el color del fondo cuando pasamos por encima del boton*/
+    background: #4a4a4a;
+}
+.header-fix a{ /*le damos formato a los a que están dentro de la clase header.fix*/
+    color: white;
+    text-decoration: none;
+}
+
+.main{
+    padding: 15rem; /*este padding lo hago porque al fijar la cabecera, se me superpone con el contenido, entonces se baja*/
+}
+
+.footer{
+    background: #333;
+    padding: 4rem 0;
+    text-align: center;
+    color: white;
+    margin-top: 10rem;
+}
+
+
+@media only screen and (max-width: 767px){ 
+    
+    .navigation{
+        width: 100%;
+    }
+
+    .navigation ul li{
+        display: block;
+    }
+    
+    .navigation ul li a{
+        display: block;
+        padding:  0.5rem 1rem;
+        transition: all 0.4s linear; /*damos animación*/
+        border-radius: 5px;
+    }
+    
+    .navigation ul li a:hover{/*cambiamos el color del fondo cuando pasamos por encima del boton*/
+        background: #4a4a4a;
+    }
+
+}
