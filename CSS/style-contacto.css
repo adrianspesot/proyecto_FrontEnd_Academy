@@ -5,17 +5,39 @@
 }
 
 .contacto img{
-    width: 50%;
+    width: 2%;
 }
 
-.redes td{
-    width: 200px;
-}
-
-span{
+.section footer{
     font-size: 13px;
 }
 
 #logo-flecha{
     width: 2.5%;
+}
+
+.section{
+    border: solid #b6b6b6;
+    border-radius: 10px;
+    background-color: #b6b6b6;
+    text-align: center;
+    
+}
+.section .contacto{
+    text-align: center;
+    align-items: center;
+}
+.section .redes{
+    text-align: center;
+    align-items: center;
+}
+.redes{
+    word-spacing: 5rem;
+}
+
+iframe{
+    width:95%; 
+    height:320px;
+    padding: 10px;
+    border: 0;
 }

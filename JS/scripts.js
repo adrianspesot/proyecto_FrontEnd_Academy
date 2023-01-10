@@ -1,5 +1,5 @@
-//Configuración para que se despliegue el menú cuando la pantalla es mas chica
 
+//Configuración para que se despliegue el menú cuando la pantalla es mas chica
 document.getElementById('menu').addEventListener('click', function(){
     let menu = document.getElementById("format-ul")
     if (menu.className === "show"){
@@ -11,9 +11,8 @@ document.getElementById('menu').addEventListener('click', function(){
 })
 
 
+
 // Enviar mensaje de contacto
-
-
 const btn = document.getElementById('btnEnviar');
 
 document.getElementById('form').addEventListener('submit', function(event) {
