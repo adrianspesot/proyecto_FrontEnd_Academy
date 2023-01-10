@@ -122,7 +122,7 @@ input{
  .formulario label{
     font-size: 13px;
  }
- #enviarBtn{
+ #btnEnviar{
     font-weight: bold;
     padding: 10px;
  }

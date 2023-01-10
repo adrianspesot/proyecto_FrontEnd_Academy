@@ -58,19 +58,19 @@
     <footer class="footer">
         <div class="container">
             <h5>Puede contactarme dejando un mensaje en el siguiente formulario</h5>
-            <form method="POST">
+            <form method="POST" id="form">
                 <fieldset>
                     <legend>Formulario de contacto</legend>
                     <div class="formulario">
                         <label for="nombre">Nombre:</label><br>  
-                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required="True"><br>
+                        <input type="text" id="nombre" name="name" placeholder="Nombre" required="True"><br>
                         <label for="apellido">Apellido:</label><br>
-                        <input type="text" id="apellido" name="apellido" placeholder="Apellido" required="True"><br>
+                        <input type="text" id="apellido" name="lastname" placeholder="Apellido" required="True"><br>
                         <label for="email">e-mail:</label><br>
                         <input type="email" id="email" name="email" placeholder="email" required="True"><br>
                         <label for="mensaje">Mensaje:</label><br>
-                        <textarea type="text" id="mensaje" name="mensaje" placeholder="Deje su mensaje en este espacio" required="True"></textarea> <br>
-                        <input type="submit" id="enviarBtn" value="Enviar">
+                        <textarea type="text" id="mensaje" name="message" placeholder="Deje su mensaje en este espacio" required="True"></textarea> <br>
+                        <input type="submit" id="btnEnviar" value="Enviar Mensaje">
                     </div>
                 </fieldset>
             </form>
@@ -79,7 +79,12 @@
         </div>
     </footer>
 
-
+    <!--Conectamos con las funcionalidades de js-->
     <script src="JS/scripts.js"></script>
+
+    <!--Librerías para enviar mensje de contacto-->
+    <!--Para enviar el mensaje uso EmailJS, previamente me registré, configuré la cuenta y el mensaje que se va a enviar-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">emailjs.init('txvQ0nd3aYVHbwUgU')</script>
 </body>
 </html>
