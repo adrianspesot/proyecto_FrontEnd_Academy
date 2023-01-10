@@ -83,8 +83,37 @@ p{
 }
 
 .main{
-    padding: 20rem 0; /*este padding lo hago porque al fijar la cabecera, se me superpone con el contenido, entonces se baja*/
+    padding: 20rem 0 5rem 0; /*este padding lo hago porque al fijar la cabecera, se me superpone con el contenido, entonces se baja*/
 }
+.main p{
+    text-align: justify;
+}
+
+.table{
+    width: 100%;
+;
+}
+.table tr{
+    text-align: center;
+    height: 140px;
+}
+.table td{
+    text-align: center;
+    width: 140px;
+}
+.table img{
+    width: 70%;
+    height: 70%;
+}
+
+.vertical{
+    display: none;
+}
+
+.horizontal{
+    display: block;
+}
+
 
 .footer{
     background: #333;
@@ -128,12 +157,17 @@ input{
  }
 
 
+ @media only screen and (max-width: 921px){
+    .title-container h1{
+        font-size: 50px;
+    }
+ }
 
 
 @media only screen and (max-width: 770px){
     
     .logo {
-        align-items: center;
+        text-align: center;
     }
     
     .menu-icon{
@@ -181,4 +215,11 @@ input{
     }
 
 
+    .vertical{
+        display: block;
+    }
+    
+    .horizontal{
+        display: none;
+    }
 }
