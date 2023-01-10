@@ -47,7 +47,6 @@ p{
     display: none;
 }
 
-
 .logo-nav-container{
     display: flex;
     justify-content: space-between; /*Con esto hacemos que los elementos que están como felx se vayan a la izq y der*/
@@ -62,9 +61,12 @@ p{
     margin: 0;
     padding: 0;
     list-style: none;
+
 }
 .navigation ul li{
     display: inline-block;
+    background-color: #4a4a4a;
+    border-radius: 10px;
 }
 
 .navigation ul li a{
@@ -161,15 +163,7 @@ input{
     .title-container h1{
         font-size: 50px;
     }
- }
 
-
-@media only screen and (max-width: 770px){
-    
-    .logo {
-        text-align: center;
-    }
-    
     .menu-icon{
         display: block;
         padding: 0.5rem 1rem;
@@ -180,7 +174,6 @@ input{
         background-color: white;
         
     }
-
     .navigation{
         width: 100%;
         margin-top: 1rem;
@@ -208,7 +201,11 @@ input{
     .navigation ul li a:hover{/*cambiamos el color del fondo cuando pasamos por encima del boton*/
         background: #4a4a4a;
     }
-    
+ }
+
+
+@media only screen and (max-width: 770px){
+     
     
     .title-container h1{
         font-size: 30px;

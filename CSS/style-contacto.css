@@ -1,0 +1,21 @@
+
+.contacto {
+   align-items: center;
+   text-align: center; 
+}
+
+.contacto img{
+    width: 50%;
+}
+
+.redes td{
+    width: 200px;
+}
+
+span{
+    font-size: 13px;
+}
+
+#logo-flecha{
+    width: 2.5%;
+}

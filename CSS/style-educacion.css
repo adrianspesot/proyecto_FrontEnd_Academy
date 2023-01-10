@@ -1,0 +1,13 @@
+#certificado{
+    list-style: none;
+}
+#certificado figcaption{
+    font-size: 12px;
+}
+
+.icon-programs{
+    list-style: none;
+}
+.icon-programs img{
+    width: 5%;
+}
