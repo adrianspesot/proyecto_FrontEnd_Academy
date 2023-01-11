@@ -11,6 +11,10 @@
     justify-content: center;
 }
 
+.overlay.desactivar{
+    visibility: hidden;
+}
+
 .popup{
     background-color: rgba(248, 248, 248, .9);
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
@@ -23,7 +27,7 @@
 
 #parrafo{
     padding: 50px;
-    transition: 2s ease all;
+    
     opacity: 0;
     font-family: 'Yeon Sung', cursive;
     font-size: 40px;
@@ -42,8 +46,8 @@
     color:black
 }
 
-.active{
-    animation: aparecer 1s ease 0.5s forwards;
+.animar{
+    animation: aparecer 1s ease 0s forwards;
 }
 
 @keyframes aparecer {

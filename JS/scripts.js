@@ -41,10 +41,10 @@ const btnCerrarPopup = document.getElementById("btn-cerrar-popup");
 const overlay = document.getElementById("overlay");
 const parrafo = document.getElementById("parrafo");
 
-parrafo.classList = 'active' //agrega una clase que hace que aparezca un saludo en la pagina de perfil
+parrafo.classList.add('animar') //agrega una clase que hace que aparezca un saludo en la pagina de perfil
 
 btnCerrarPopup.addEventListener('click', function(){
-  overlay.classList.remove('overlay')
-
+  overlay.classList.remove('animar');
+  overlay.classList.add('desactivar')
 })
 
