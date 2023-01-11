@@ -12,7 +12,7 @@ document.getElementById('menu').addEventListener('click', function(){
 
 
 
-// Enviar mensaje de contacto
+// Enviar mensaje de contacto usando una libreria llamada emailjs
 const btn = document.getElementById('btnEnviar');
 
 document.getElementById('form').addEventListener('submit', function(event) {
@@ -33,3 +33,18 @@ document.getElementById('form').addEventListener('submit', function(event) {
       alert(JSON.stringify(err));
     });
 });
+
+
+
+// Accedemos al boton cerrar de la ventana emergente que aparece al incio, es decir el popup
+const btnCerrarPopup = document.getElementById("btn-cerrar-popup");
+const overlay = document.getElementById("overlay");
+const parrafo = document.getElementById("parrafo");
+
+parrafo.classList = 'active' //agrega una clase que hace que aparezca un saludo en la pagina de perfil
+
+btnCerrarPopup.addEventListener('click', function(){
+  overlay.classList.remove('overlay')
+
+})
+

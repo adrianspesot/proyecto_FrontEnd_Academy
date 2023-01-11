@@ -116,6 +116,13 @@ p{
     display: block;
 }
 
+.bandera{
+    text-align: center;
+    width: 100%;
+}
+table .bandera td{
+    width: 425px;
+}
 
 .footer{
     background: #333;

@@ -1,12 +1,10 @@
 #certificado{
     list-style: none;
 }
-#certificado figcaption{
-    font-size: 12px;
-}
 
 .icon-programs{
     list-style: none;
+    font-size: 13px;
 }
 .icon-programs img{
     width: 5%;
