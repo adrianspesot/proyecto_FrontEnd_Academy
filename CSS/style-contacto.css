@@ -2,10 +2,11 @@
 .contacto {
    align-items: center;
    text-align: center; 
+   font-size: 40px;
 }
 
 .contacto img{
-    width: 2%;
+    width: 4%;
 }
 
 .section footer{

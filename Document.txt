@@ -1,0 +1,42 @@
+Proyecto Final - FRONT END - Ticmas Academy
+
+Este proyecto consta de un CV ficticio, donde el contenido que contiene es exclusivamente de relleno.
+Se hizo enfoque en la funcionalidad del mismo y no en el contenido en sí que pueda llegar a tener.
+
+El archivo consta de 2 carpetas donde se almacenan los estilos CSS y la funcionalidad creada en JS y 
+a su vez, archivos .html sueltos donde se encuentran las distintas páginas.
+
+Para iniciar el proyecto, debe abrir el archivo index.html, esta lo dirige a la página inicial del perfil
+
+En perfil encontrará, una ventan emergente de bienvenida que al cerrarla obserbará el contenido del CV
+donde se aprecia una descripción de Perfil (de relleno), las habilidades y el idioma que maneja la persona.
+Al pie de página, se encontrará con un formulario donde puede dejar un mensaje que será envaiado al mail: adrianspesot@gmail.com
+puse este mail para poder realizar las pruebas sin tener que crear un mail ficticio de la persona en cuaestión.
+
+Además, en cada página, se encontrará con una botonera de navegación, que lo dirigirá a las distintas páginas
+que contiene el CV, estas son de Contacto y Redes sociales, de Experiencia laboral y educación, Por supuesto que también
+existe un botón que redirige a la página inicial.
+
+Todas las páginas tienen el mismo formato con un encabezado al inicio, el cual está completamente fijo y en su pie de página
+el formulario de contacto con la funcionalidad ya explicada.
+
+Funcionalidades creadas en JavaScript.
+Este proyecto cuenta con 3 funcionalidades: 
+1 - Cuando la pantalla se achica, llega un momento que el menú cambia el formato y pasa a ser un botón que al hacerle click
+despliega el menú de manera vertical.
+
+2 - Envío de mail, mediante el formulario del pie de página
+
+3 - Aparición y cierre de la ventana emergente que se ve en la página index.html
+
+Librerías extras.
+1 - EmailJS: se utiliza para enviar el mail mediante el formulario
+2 - Para estilos de fuentes: https://fonts.google.com/. Fue solo utilizado para la fuente de la ventana emergente
+3 - Icono de cierre de ventana emergente: https://fontawesome.com/ con la estiqueta <i> y la clase fas fa-times
+se logró obtener la Cruz de cierre.
+
+
+Páginas de imágenes e iconos utilizados.
+1 - https://www.flaticon.es/
+2 - https://es.piliapp.com/facebook-symbols/
+3 - https://randomuser.me/ (página de perfiles random)
